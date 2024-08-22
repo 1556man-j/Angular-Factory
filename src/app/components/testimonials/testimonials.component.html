@@ -1,0 +1,20 @@
+<!--Testimonials-->
+<aside id="testimonials" class="scrollto text-center tt" data-enllax-ratio=".2">
+  <div class="row clearfix">
+    <div class="section-heading">
+      <h3>{{ testimonial?.data?.top }}</h3>
+      <h2 class="section-title">{{ testimonial?.data?.title }}</h2>
+    </div>
+
+    <!--User Testimonial-->
+    @for (feedbackBlock of testimonial?.data?.feedbackBlock; track feedbackBlock) {
+    <blockquote class="col-3 testimonial classic">
+      <img src="{{ feedbackBlock.img }}" alt="{{ feedbackBlock.name }}" />
+      <q>{{ feedbackBlock.comments }}</q>
+      <footer>{{ feedbackBlock.name }}</footer>
+    </blockquote>
+    }
+    <!-- End of Testimonial-->
+  </div>
+</aside>
+<!--End of Testimonials-->

@@ -1,0 +1,8 @@
+.section-heading{
+    margin-top: 70px;
+}
+@media (min-width: 768px){
+    .tt{
+        height: 100vh;
+    }
+}

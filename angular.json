@@ -23,11 +23,22 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "public",
+                "output": "/"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/assets",
+                "output": "assets"
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/css/style.css",
+              "src/assets/css/animate.css",
+              "src/assets/css/font-awesome.css",
+              "src/assets/css/namari-color.css",
+              "src/assets/css/font-awesome.min.css"
             ],
             "scripts": [],
             "server": "src/main.server.ts",
@@ -90,7 +101,12 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/css/style.css",
+              "src/assets/css/animate.css",
+              "src/assets/css/font-awesome.css",
+              "src/assets/css/namari-color.css",
+              "src/assets/css/font-awesome.min.css"
             ],
             "scripts": []
           }

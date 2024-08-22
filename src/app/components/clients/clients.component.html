@@ -1,0 +1,24 @@
+<!--Clients-->
+<section id="clients" class="scrollto clearfix">
+    <div class="row clearfix">
+      <div class="col-3">
+        <div class="section-heading">
+          <h3>{{Client?.data?.top}}</h3>
+          <h2 class="section-title">{{Client?.data?.title}}</h2>
+          <p class="section-subtitle">
+            {{Client?.data?.description}}
+          </p>
+        </div>
+      </div>
+
+      <div class="col-2-3">
+        @for (companyBlocks of Client?.data?.companyBlocks; track companyBlocks) {
+        <a href="#" class="col-3">
+          <img class="imgg" src="{{companyBlocks.img}}" alt="{{companyBlocks.name}}" />
+          <div class="client-overlay"><span>{{companyBlocks.name}}</span></div>
+        </a>
+      }
+      </div>
+    </div>
+  </section>
+  <!--End of Clients-->

@@ -1,0 +1,11 @@
+.ggimg{
+    margin-bottom: 50px;
+}
+@media (min-height: 480px){
+    .tt{
+        height: 100vh;
+    }
+    .bb {
+        margin-top: 20%;
+    }
+}

@@ -1,0 +1,13 @@
+.imgg{
+    width: 490px;
+    height: 290px;
+}
+.section-heading{
+    margin-top: 70px;
+}
+@media (min-width: 768px) {
+    .imgg{
+        width: 350px;
+        height: 190px;
+    }
+}
